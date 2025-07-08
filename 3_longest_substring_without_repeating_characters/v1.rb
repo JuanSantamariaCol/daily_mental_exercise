@@ -1,3 +1,5 @@
+#Runtime 66 ms (Beats 30%), Memory 211.55 MB (Beats 84.25%)
+
 def length_of_longest_substring(s)
     pointer_l = 0
     pointer_r = 0
