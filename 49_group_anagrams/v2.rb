@@ -1,32 +1,16 @@
 
 # @param {String[]} strs
 # @return {String[][]}
-# Time Limit Exceeded but works
+#Runtime 38 ms (Beats 70.16%), Memory 217.48 MB (Beats 50.79%)
 def group_anagrams(strs)
     memory = {}
     strs.each_with_index do |item, index|
-        added = false
-        memory.keys.each do |key|
-            if is_anagram(item, key)
-                memory[key] << item
-                added = true
-                break
-            end
-        end 
-        unless added 
-            memory[item] = [item]
-        end
+        key = item.chars.sort.join 
+        memory[key] = [] unless memory.has_key? key
+        memory[key] << item 
     end
     memory.values
 end
 
-def is_anagram(s, t)
-    return false if s.size != t.size
-    for c in 'a'..'z'
-        return false if s.count(c) != t.count(c)
-    end
-    return true
-end
-
-strs = ["eat","tea","tan","ate","nat","bat"]
+strs = [""]
 pp group_anagrams(strs)
