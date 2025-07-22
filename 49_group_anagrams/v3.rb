@@ -9,5 +9,3 @@ end
 
 strs = ["eat","tea","tan","ate","nat","bat"]
 pp group_anagrams(strs)
-
-a

@@ -5,7 +5,3 @@ ORDER BY SALARY DESC
 OFFSET 1
 LIMIT 1;
 
-
-V2 
-
-fir

@@ -5,7 +5,7 @@ def length_of_longest_substring(s)
     max = 0 
     memory = {}
     s.chars.each_with_index do |letter, pointer_r|
-        if memory.has_key?(letter) && memory[letter] >= pointer_l #la posicion de la letra tiene que se mayor a la del puntero_l para que se corra el puntero l   
+        if memory.has_key?(letter) && memory[letter] >= pointer_l #La posicion de la letra tiene que se mayor a la del puntero_l para que se corra el puntero l (incial)  
             pointer_l =  memory[letter] + 1 
         end
         memory[letter] = pointer_r
