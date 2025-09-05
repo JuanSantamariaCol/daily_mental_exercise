@@ -52,8 +52,8 @@ class LinkedList
     def display
         current = @head
         while current
-        print "#{current.value} -> "
-        current = current.next
+            print "#{current.value} -> "
+            current = current.next
         end
         puts "nil"
     end
