@@ -1,7 +1,8 @@
 # @param {String} s
 # @param {String} t
 # @return {Boolean}
-#Runtime 62 ms (Beats 5.52%), Memory 216.38 MB (Beats 51.56%)
+# Runtime 64 ms (Beats 6.78%), Memory 216.47 MB (Beats 53.66%)
+# In this solution, the goal is to use the recommended themes.
 def is_anagram(s, t)
     return false if s.size != t.size
     memory = {}
@@ -15,7 +16,7 @@ def is_anagram(s, t)
 end
 
 
-s = "ab"
-t = "a"
+s = "anagram"
+t = "nagaram"
 
 pp is_anagram(s,t)
