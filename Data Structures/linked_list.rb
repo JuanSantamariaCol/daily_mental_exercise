@@ -40,7 +40,7 @@ class LinkedList
         end
     end
 
-    # Agregar un nodo al inicio V1 <-- mejor imple,entacion
+    # Agregar un nodo al inicio V1 <-- mejor impleentacion
     def prepend(value)
         new_node = Node.new(value)
         new_node.next = @head #Antiguo nodo 
